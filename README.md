@@ -71,25 +71,25 @@ python sonar_classification.py
 - Total Test Samples: 21
 
 # Code Structure
-## 1. Data Loading and Exploration
+1. Data Loading and Exploration
 sonar_data = pd.read_csv('sonar data.csv', header=None)
 
-## 2. Data Preprocessing
+2. Data Preprocessing
 X = sonar_data.drop(60, axis=1)
 Y = sonar_data[60]
 
-## 3. Train-Test Split (90-10)
+3. Train-Test Split (90-10)
 X_train, X_test, Y_train, Y_test = train_test_split(...)
 
-## 4. Model Training
+4. Model Training
 model = LogisticRegression()
 model.fit(X_train, Y_train)
 
-## 5. Evaluation
+5. Evaluation
 train_acc = accuracy_score(...)
 test_acc = accuracy_score(...)
 
-## 6. Prediction System
+6. Prediction System
 input_data = (...)  # 60 feature values
 prediction = model.predict(...)
 
