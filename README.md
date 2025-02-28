@@ -1,4 +1,4 @@
-# Sonar Rock vs Mine Classification
+# Sonar Rock and Mine Classification
 
 A machine learning project to classify sonar signals as either rocks or mines using Logistic Regression.
 
